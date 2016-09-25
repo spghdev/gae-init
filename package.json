@@ -29,12 +29,14 @@
     "gulp-size": "~2",
     "gulp-sourcemaps": "~1",
     "gulp-start": "~1",
+    "gulp-typescript": "~3",
     "gulp-uglify": "~2",
     "gulp-util": "~3",
     "gulp-zip": "~3",
     "less": "~2",
     "main-bower-files": "~2",
     "require-dir": "~0",
+    "typescript": "~2",
     "uglify-js": "~2",
     "yargs-parser": "~3"
   }

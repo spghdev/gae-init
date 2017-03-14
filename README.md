@@ -80,7 +80,7 @@ Tech Stack
 
   - [Google App Engine][], [NDB][]
   - [Jinja2][], [Flask][], [Flask-RESTful][], [Flask-WTF][]
-  - [CoffeeScript][], [Less][]
+  - [JavaScript][], [Less][], [CoffeeScript][] (optional),
   - [Bootstrap][], [Font Awesome][], [Social Buttons][]
   - [jQuery][], [Moment.js][]
   - [OpenID][] sign in (Google, Facebook, Twitter and more)
@@ -100,6 +100,7 @@ Tech Stack
 [google app engine]: https://developers.google.com/appengine/
 [gulp]: http://gulpjs.com
 [how to]: http://docs.gae-init.appspot.com/howto/
+[javascript]: https://en.wikipedia.org/wiki/JavaScript
 [jinja2]: http://jinja.pocoo.org/docs/
 [jquery]: https://jquery.com/
 [less]: http://lesscss.org/

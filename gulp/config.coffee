@@ -10,9 +10,11 @@ config =
     "#{paths.static.ext}/bootstrap/js/collapse.js"
     "#{paths.static.ext}/bootstrap/js/dropdown.js"
     "#{paths.static.ext}/bootstrap/js/tooltip.js"
+    "#{paths.static.ext}/datatable/jquery.dataTables.min.js"
   ]
   style: [
     "#{paths.src.style}/style.less"
+    "#{paths.src.style}/jquery.dataTables.min.css"
   ]
   script: [
     "#{paths.src.script}/**/*.coffee"

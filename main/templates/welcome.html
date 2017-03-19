@@ -5,7 +5,14 @@
 # endblock
 
 # block content
-<div class="row">
+
+<div id="tabledemo">
+  <h3>AWS Costs</h3>
+  Filter by anything: <input v-model="search">
+  <hr>
+  <data-table :users="filteredUsers"></data-table>
+</div>
+<!-- <div class="row">
 <table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
@@ -13,7 +20,6 @@
                 <th>SKU</th>
                 <th>Location</th>
                 <th>Instance Type</th>
-                <th>Location</th>
                 <th>Network Performance</th>
             </tr>
         </thead>
@@ -23,10 +29,10 @@
                 <th>SKU</th>
                 <th>Location</th>
                 <th>Instance Type</th>
-                <th>Location</th>
                 <th>Network Performance</th>
             </tr>
         </tfoot>
     </table>
   </div>
-# endblock
+ -->
+ # endblock

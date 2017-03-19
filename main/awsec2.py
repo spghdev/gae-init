@@ -11,6 +11,6 @@ def get_awsec2_prices():
   data = json.load(open(filename))
   # return flask.jsonify(data)
   #data = open(os.path.join(app.static_folder, "data", "data.json"), "r")
-  print '###filename %s' % (filename)
-  print '###filename %s' % (data)
+#  print '###filename %s' % (filename)
+#  print '###filename %s' % (data)
   return flask.jsonify(data)

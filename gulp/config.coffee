@@ -11,6 +11,7 @@ config =
     "#{paths.static.ext}/bootstrap/js/dropdown.js"
     "#{paths.static.ext}/bootstrap/js/tooltip.js"
     "#{paths.static.ext}/datatable/jquery.dataTables.min.js"
+    "#{paths.static.ext}/vue/vue.min.js"
   ]
   style: [
     "#{paths.src.style}/style.less"

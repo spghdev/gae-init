@@ -108,19 +108,6 @@
         "processorFeatures" : "Intel AVX; Intel Turbo"
       }
     },
-   {
-      "sku" : "M6F5RBA4GFRVEDDN",
-      "productFamily" : "IP Address",
-      "attributes" : {
-        "servicecode" : "AmazonEC2",
-        "location" : "US West (N. California)",
-        "locationType" : "AWS Region",
-        "group" : "ElasticIP:Address",
-        "groupDescription" : "Elastic IP address attached to a running instance",
-        "usagetype" : "USW1-ElasticIP:IdleAddress",
-        "operation" : ""
-      }
-    },
     {
       "sku" : "QPN2H3V39T9H38UC",
       "productFamily" : "Compute Instance",

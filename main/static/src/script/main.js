@@ -21,12 +21,8 @@ Vue.component('data-table', {
   data() {
     return {
       headers: [
-        { title: 'ID' },
-        { title: 'Username', class: 'some-special-class' },
-        { title: 'Real Name' },
-        { title: 'Phone' },
-        { title: 'Email' },
-        { title: 'Website' }
+        { title: 'SKU' },
+        { title: 'Product Family', class: 'some-special-class' }
       ],
       rows: [] ,
       dtHandle: null
@@ -43,13 +39,8 @@ Vue.component('data-table', {
         // skip this loop...
         let row = [];
 
-        row.push(item.id);
-        row.push(item.username);
-        row.push(item.name);
-        row.push(item.phone);
-        row.push('<a href="mailto://' + item.email + '">' + item.email + '</a>');
-        row.push('<a href="http://' + item.website + '" target="_blank">' + item.website + '</a>');
-
+        row.push(item.sku);
+        row.push(item.productFamily);
         vm.rows.push(row);
       });
 
@@ -85,20 +76,17 @@ new Vue({
       let self = this
       let search = self.search.toLowerCase()
       return self.users.filter(function (user) {
-        return  user.username.toLowerCase().indexOf(search) !== -1 ||
-          user.name.toLowerCase().indexOf(search) !== -1 ||
-          user.phone.indexOf(search) !== -1 ||
-          user.email.toLowerCase().indexOf(search) !== -1 ||
-          user.website.toLowerCase().indexOf(search) !== -1
+        return  user.sku.toLowerCase().indexOf(search) !== -1 ||
+          user.productFamily.toLowerCase().indexOf(search) !== -1 
       })
     }
   },
   mounted() {
     let vm = this;
     $.ajax({
-      url: 'https://jsonplaceholder.typicode.com/users',
+      url: './awsec2',
       success(res) {
-        vm.users = res;
+        vm.users = res.data;
       }
     });
   }

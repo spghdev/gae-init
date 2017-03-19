@@ -42,6 +42,7 @@ handlers:
 
 - url: /p/
   static_dir: static/
+  application_readable: true
   expiration: "365d"
 
 - url: /.*

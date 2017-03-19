@@ -20,6 +20,7 @@ import auth
 import control
 import model
 import task
+import awsec2
 
 from api import helpers
 

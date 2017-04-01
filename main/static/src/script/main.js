@@ -14,7 +14,7 @@ console.log("hello")
 //     });
 // } );
 
-
+//https://willvincent.com/blog/making-vuejs-and-datatables-play-nice
 Vue.component('data-table', {
   template: '<table></table>',
   props: ['users'],
@@ -22,7 +22,8 @@ Vue.component('data-table', {
     return {
       headers: [
         { title: 'SKU' },
-        { title: 'Product Family', class: 'some-special-class' }
+        { title: 'Product Family', class: 'some-special-class' },
+        { title: 'Location', class: 'some-special-class' }
       ],
       rows: [] ,
       dtHandle: null
@@ -41,6 +42,7 @@ Vue.component('data-table', {
 
         row.push(item.sku);
         row.push(item.productFamily);
+        row.push(item.attributes.location);
         vm.rows.push(row);
       });
 
@@ -66,7 +68,7 @@ Vue.component('data-table', {
 });
 
 new Vue({
-  el: '#tabledemo',
+  el: '#tabledata',
   data: {
     users: [],
     search: ''
@@ -77,7 +79,8 @@ new Vue({
       let search = self.search.toLowerCase()
       return self.users.filter(function (user) {
         return  user.sku.toLowerCase().indexOf(search) !== -1 ||
-          user.productFamily.toLowerCase().indexOf(search) !== -1 
+          user.productFamily.toLowerCase().indexOf(search) !== -1 ||
+          user.attributes.location.toLowerCase().indexOf(search) !== -1 
       })
     }
   },
